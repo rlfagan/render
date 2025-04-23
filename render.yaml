@@ -3,5 +3,5 @@ services:
     name: scanoss-app
     env: python
     buildCommand: pip install -r backend/requirements.txt
-    startCommand: gunicorn app:app -w 1 -b 0.0.0.0:10000
+    startCommand: gunicorn backend.app:app -w 1 -b 0.0.0.0:10000
     plan: free
